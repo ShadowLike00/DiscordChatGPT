@@ -11,9 +11,7 @@ from keep_alive import keep_alive
 
 
 
-with open("chat.txt", "r") as f:
-    chat=f.read()
-
+chat=""
 # Load .env or Replit Secrets
 load_dotenv()
 DISCORD_TOKEN = os.getenv("SECRET_KEY")
