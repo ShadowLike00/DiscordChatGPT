@@ -9,9 +9,9 @@ import requests
 from dotenv import load_dotenv
 from keep_alive import keep_alive
 
-
-
-chat=""
+with open("chat.txt", "r") as f:
+    chat=f.read()
+    
 # Load .env or Replit Secrets
 load_dotenv()
 DISCORD_TOKEN = os.getenv("SECRET_KEY")
